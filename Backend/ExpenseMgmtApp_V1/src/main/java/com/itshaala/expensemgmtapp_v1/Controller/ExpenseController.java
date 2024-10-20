@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("/api/expenses")
+@RequestMapping("/api/expense")
 @CrossOrigin(origins = "http://localhost:5173")
 public class ExpenseController {
     private ExpenseService expenseService;

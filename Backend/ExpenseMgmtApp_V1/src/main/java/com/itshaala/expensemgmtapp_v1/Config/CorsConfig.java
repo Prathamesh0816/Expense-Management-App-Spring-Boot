@@ -13,8 +13,8 @@ public class CorsConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/**")  // or "/**" for all endpoints
-                        .allowedOrigins("http://localhost:5173")  // Frontend URL
+                registry.addMapping("/api/**")
+                        .allowedOrigins("https://expense-management-app-spring-boot.vercel.app/")
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
